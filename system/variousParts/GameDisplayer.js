@@ -27,16 +27,8 @@ export class GameDisplayer {
     drawUtils = new DrawUtils();
     background
 
-    constructor(Game, Map, Camera, Player, Debug = 0, DM, BG, CPM, TP, game) {
+    constructor(Game) {
         this.game = Game;
-        this.map = Map;
-        this.deathMap = DM
-        this.camera = Camera;
-        this.debug = Debug
-        this.player = Player
-        this.background = BG
-        this.checkpoint = CPM
-        this.teleport = TP
     }
 
     // methods (functions)
@@ -49,7 +41,7 @@ export class GameDisplayer {
     }
     
 
-    
+
     resizeCanvasForWindowSize() {
         var currentWidth = canvas.width;
         var currentHeight = canvas.height;

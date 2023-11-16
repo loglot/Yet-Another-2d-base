@@ -7,9 +7,8 @@ class Main {
     game = new Game()
 
     async startGame() {
-        if(localStorage) {this.game.storage.accessible = false} else {this.game.storage.accessible = true}
         while (true) {
-            this.game.updateGame();
+            this.updateGame();
             
             this.game.gameDisplayer.drawGameFrame()
             await this.sleep(1000/60);
